@@ -8,7 +8,6 @@ body {
 	height: 3375px;
 	width: 2625px;
 	margin: 0 auto;
-	display: inline-block;
 	box-shadow: 5px -5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -17,21 +16,35 @@ body {
 	background-color: #fff;
 }
 
-.header_top {
-	height: 645px;
+.header-top {
+	margin: 0;
+	padding: 0;
 	width: 2625px;
 	background-color: #4c5eab;
 	display: flex;
+	align-items: flex-end;
+}
+
+a.main-header-logo {
+	height: 360px;
+	width: 360px;
+	background-color: #D6D6D6;
+	border-radius: 180px;
+	overflow: hidden;
 }
 
 div.logo-text-block {
 	width: 1500px;
 	display: flex;
+	align-items: center;
+	padding-top: 160px;
+	padding-bottom: 125px;
+	padding-left: 205px;
 }
 
 .logo-text-andrew {
-	padding-top: 180px;
-	padding-left: 80px;
+	padding-bottom: 30px;
+	padding-left: 77px;
 }
 
 h2.logo-text-h2 {
@@ -40,28 +53,25 @@ h2.logo-text-h2 {
 	font-size: 100px;
 	color: white;
 	line-height: 25px;
+	letter-spacing: 5px;
+
 }
 
 h3.logo-text-little-h3 {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 600;
 	font-size: 58.33px;
-	line-height: 25px;
 	color: white;
+	line-height: 25px;
 }
 
-.circle {
-	height: 360px;
-	width: 360px;
-	display: flex;
-	margin-top: 161px;
-	margin-left: 245px;
-}
+
 
 .contacts {
 	margin-left: auto;
-	padding-top: 90px;
 	padding-right: 190px;
+	padding-bottom: 60px;
+
 }
 
 ul {
@@ -109,6 +119,9 @@ ul {
 .contacts-item-mail {
 	list-style-image: url("img/telephone.png");
 }
+
+
+
 
 /* ---------------LEFT------------------ */
 
@@ -200,8 +213,7 @@ td {
 	border: 5px solid #fcfcfc;
 }
 
-.work-experience {
-}
+.work-experience {}
 
 .right-date {
 	display: inline-block;
@@ -220,9 +232,11 @@ td {
 	float: left;
 	margin-left: 85px;
 }
+
 .img-right-big {
 	margin-top: 40px;
 }
+
 .img-right-small {
 	margin-top: 95px;
 }
@@ -254,6 +268,7 @@ table.footer {
 	font-weight: 600;
 	line-height: 125px;
 }
+
 .education {
 	margin-bottom: 100px;
 	margin-top: 150px;
