@@ -18,6 +18,10 @@ body {
 	box-shadow: 5px -5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.visually-hidden {
+	display: none;
+}
+
 .header-top {
 	margin: 0;
 	padding: 0;
@@ -34,6 +38,7 @@ a.main-header-logo {
 	background-color: #D6D6D6;
 	border-radius: 180px;
 	overflow: hidden;
+
 }
 
 div.logo-text-block {
@@ -316,16 +321,169 @@ h3.logo-text-little-h3 {
 }
 
 .portfolio-items__text {
+	margin-bottom: 0;
 	text-align: center;
 }
 
 .portfolio-items__text h2 {
-	margin-bottom: 0;
 	font-weight: 600;
 }
 
 .portfolio-items__text h3 {
 	margin-top: 5px;
 	padding-bottom: 60px;
-	margin-bottom: 0;
 }
+
+
+
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+
+	70% {
+		transform: translateY(30px);
+	}
+
+	90% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+/*
+@keyframes shake {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}*/
+
+
+.modal {
+	position: fixed;
+	background-color: white;
+	/*background-image: url("img/pc.jpg");*/
+	background-repeat: no-repeat;
+	/*background-position: center center;*/
+	/*background-position: 0 0;*/
+	/*width: 100%;*/
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	z-index: 2;
+}
+
+.modal-map {
+	/*top: 5%;
+	right: 35%;*/
+	top: 25%;
+	left: 35%;
+	padding: 15px 15px 0;
+	display: none;
+	/*transform: translate(-50%, -50%);*/
+
+}
+
+.modal-show {
+	display: block;
+	animation: bounce 0.6s;
+
+}
+
+.modal-error {
+	animation: shake 0.6s;
+}
+
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+	border: none;
+}
+
+.contacts-button-map {}
+
+
+
+.modal-hidden {
+	display: none;
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: #979797;*/
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: -44px;
+	width: 22px;
+	height: 22px;
+	font-size: 0px;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 2px;
+
+	width: 30px;
+	height: 5px;
+	background-color: #0048BA;
+}
+
+.modal-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-close::after {
+	transform: rotate(-45deg);
+
+}
+
+.modal-foto {
+	/*display: none;*/
+	/*background-image: url("img/pc.jpg");*/
+	/*background-size: cover;*/
+	/*transform: translate(-50%, -50%);*/
+
+	position: absolute;
+	width: 1600px;
+	height: 1200px;
+	top: 25%;
+	left: 35%;
+	border: 5px solid white;
+	padding: 0;
+	z-index: 2;
+}
+
+.portfolio-link {}
